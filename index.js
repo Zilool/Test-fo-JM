@@ -1,11 +1,10 @@
 console.clear();
 var LNG=[];
-// запрос json:
-function zapros(){
-	// получаем выбора пользователя:
+// json:
+function asd(){
 	var group = document.getElementById("group").value;
 		console.log(group);
-	// создаем url для запроса:
+	// url для запроса:
 	var url="https://frontend-test-api.alex93.now.sh/api/languages?group="+group;
 	// запрос json:
 	fetch(url)
@@ -15,16 +14,14 @@ function zapros(){
 					.then(
 						function(exp){
 							var res=exp.data;
-							// получил массив из json, проверка:
-							//console.log("массив? : "+res);
-								// обработка, отфильтрую по Logo:
+								// фильтр по Logo:
 								var okArr=res.filter( // новый массив
 									function(logo){
-										var flag=false; // метка для отбора нужных элементов массива
-										Object.keys(logo).forEach( // поиск по ключам элементов
+										var flag=false; // метка для массива
+										Object.keys(logo).forEach( // поиск по ключам
 											function (key){
 												if(String(key).indexOf("logo")>-1) {
-													flag=true; // если индекс Элемента больше или равен 0, значит нужный, ставим метку.
+													flag=true;
 													return;
 												}
 											}
