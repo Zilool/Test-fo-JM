@@ -1,9 +1,9 @@
 h1{
     color:green;
-    font-size: 2vw;
+    font-size: 3vw;
     text-align: center;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
     font-family: Anonymous Pro;
     font-weight: bold;
     font-style: normal;
@@ -11,13 +11,15 @@ h1{
     letter-spacing:2px;
 }   
 body{
-    background-color: rgb(238, 238, 238);
+    background-color: rgb(225, 238, 238);
 	font-family: "Anonymous Pro";
 	
 }
+.text{
+	color:green;
+}
 .data {
 	max-width: 400px;
-	border-radius: 20px;
 	border-color: dimgray;
 	border-style: solid;
 	margin:auto;
@@ -27,13 +29,13 @@ body{
 .cards {
 	border-color: dimgray;
 	border-style: solid;
-	width: 350px;
+	width: 450px;
 	min-height: 10px;
 	margin:auto;
 	border:10px;
 }
 .card {
-	width:350px;
+	width:450px;
 	height: 100px;
 	display:flex;
 	border:0.5px;
@@ -46,12 +48,12 @@ body{
 	flex-wrap: wrap;
 }
 .logo-img img{
-	width: 90px;
-	height: 90px;
+	width: 150px;
+	height: 150px;
 	background-size:cover;
 	background-position:center;
 	margin: 5px;
-	border-color: aqua;
+	border-color: green;
 	border-style: solid;
 	box-sizing:border-box;
 }
@@ -88,6 +90,4 @@ body{
 	float: right;
 	right: 10%;
 }
-.text{
-	color:aqua;
-}
+
